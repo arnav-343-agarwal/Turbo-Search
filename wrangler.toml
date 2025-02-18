@@ -1,0 +1,6 @@
+name = "turbo-search"
+compatibility_date = "2025-02-18"
+
+[vars]
+UPSTASH_REDIS_REST_TOKEN = AUFkAAIjcDFkNWQ4NTY5ZmZkOTY0YTg5YWFjOTNiZThlM2NjYWM2OXAxMA
+UPSTASH_REDIS_REST_URL = https://discrete-iguana-16740.upstash.io
