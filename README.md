@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Turbo Search
 
-## Getting Started
+Turbo Search is a high-performance search engine built with **Next.js**, **TypeScript**, **Hono**, and **Cloudflare**. It leverages **Redis** for efficient indexing and fast lookups, ensuring seamless search experiences.
 
-First, run the development server:
+## 🚀 Live Demo
+🔗 [Turbo Search Deployed](https://turbo-search-efcprrkly-arnav-agarwals-projects-abdc176f.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📂 Project Structure
+```
+Turbo-Search/
+│── src/
+│   ├── app/                # Next.js pages and API routes
+│   ├── components/         # UI components
+│   ├── lib/                # Redis setup and utilities
+│   ├── hooks/              # Custom React hooks
+│   ├── styles/             # Global styles
+│── public/                 # Static assets
+│── .env                    # Environment variables
+│── vercel.json             # Vercel deployment config
+│── package.json            # Dependencies and scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
+- **Frontend**: Next.js (TypeScript)
+- **Backend**: Hono (Cloudflare Workers)
+- **Database**: Redis (Upstash)
+- **Deployment**: Vercel + Cloudflare
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 Setup and Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/arnav-343-agarwal/Turbo-Search.git
+cd Turbo-Search
+```
 
-## Learn More
+### 2️⃣ Install Dependencies
+```sh
+yarn install  # or npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3️⃣ Configure Environment Variables
+Create a `.env.local` file and add:
+```sh
+REDIS_URL=your_upstash_redis_url
+REDIS_TOKEN=your_upstash_redis_token
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4️⃣ Start Development Server
+```sh
+yarn dev  # or npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Deployment
+### Deploy to Vercel
+```sh
+vercel deploy
+```
 
-## Deploy on Vercel
+## 🔗 Links
+- **GitHub Repository**: [Turbo Search](https://github.com/arnav-343-agarwal/Turbo-Search.git)
+- **Live Demo**: [Turbo Search](https://turbo-search-efcprrkly-arnav-agarwals-projects-abdc176f.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
+💡 **Contributions & Issues**: Feel free to open issues or submit PRs to improve Turbo Search! 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
