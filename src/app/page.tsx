@@ -20,10 +20,8 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       if (!input) return setSearchResults(undefined)
-      // once deployed, prefix this with your cloudflare worker url
-      // i.e.: https://<name>.<account-name>.workers.dev/api/search?q=${input}
 
-      const res = await fetch(`/api/search?q=${input}`)
+      const res = await fetch(`https://turbosearch.turbosearch.workers.dev//api/search?q=${input}`)
       const data = (await res.json()) as { results: string[]; duration: number }
       setSearchResults(data)
     }
